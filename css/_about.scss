@@ -1,0 +1,82 @@
+// about us
+.about_us_inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 4em 2em;
+
+
+    .img {
+        width: 40%;
+        margin-bottom: 2em;
+        position: relative;
+
+        .img-front {
+            width: 100%;
+            opacity: 1;
+            @include transition-ease;
+        }
+
+        .img-back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            opacity: 0;
+            @include transition-ease;
+        }
+
+        &:hover {
+            .img-front {
+                opacity: 0;
+            }
+
+            .img-back {
+                opacity: 1;
+            }
+        }
+    }
+
+    .text {
+        width: 55%;
+
+        p {
+            font-size: 1.3em;
+            font-weight: 400;
+        }
+
+        .tab-para {
+            font-size: 1em;
+            font-weight: 300;
+        }
+    }
+
+    .tab-wrap {
+        background-color: #80808021;
+        box-shadow: 2px 3px 9px;
+        margin: 3em 0;
+        padding: 1.5em 1.5em 0 1.5em;
+
+        button {
+            width: 50%;
+            color: black;
+
+            &.active {
+                background-color: #7AB730;
+                color: white;
+            }
+
+        }
+
+        .tab-content {
+            padding: 0.7em;
+        }
+
+        p {
+            font-size: 1em;
+            font-weight: 300;
+            color: gray;
+        }
+    }
+}

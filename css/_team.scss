@@ -1,0 +1,122 @@
+.team {
+    padding: 4em 3em 2em 2em;
+
+    #owl-carousel-wrap-dog {
+        .owl-theme {
+            position: relative;
+        }
+    }
+
+}
+
+#owl-carousel-wrap-dog {
+
+    .item {
+        background-color: #f3f3f3;
+
+        &:hover .icons {
+            display: inline-block;
+            background-color: #7ab73062;
+        }
+
+        h6 {
+            text-align: center;
+            color: gray;
+            padding-bottom: 1em;
+        }
+
+        h5 {
+            font-weight: 500;
+            text-align: center;
+            padding-top: 1em;
+        }
+    }
+}
+
+
+#owl-carousel-wrap-dog {
+    .img-icon {
+        position: relative;
+
+        .icons {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: none;
+        }
+    }
+}
+
+
+#owl-carousel-wrap-dog {
+    .icons {
+        a {
+            @include flex-box;
+            justify-content: center;
+            text-decoration: none;
+            width: 3em;
+            height: 3em;
+            margin-bottom: 0.5em;
+            margin-top: 0.2em;
+            margin-left: 0.2em;
+            background-color: white;
+            position: relative;
+            animation-name: animate-icon;
+            animation-duration: 0.6s;
+            animation-fill-mode: forwards;
+            @include transition-ease;
+        }
+
+        @keyframes animate-icon {
+            from {
+                top: 60px;
+            }
+
+            to {
+                top: 0;
+            }
+        }
+
+        a:hover {
+            background-color: $primary-color;
+        }
+
+        i {
+            @include flex-box;
+            justify-content: center;
+            color: black;
+        }
+    }
+}
+
+
+#owl-carousel-wrap-dog {
+    .owl-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        top: 20%;
+        right: -38px;
+
+        button {
+            width: 2em;
+            height: 1.5em;
+            background-color: $primary-color;
+            font-size: 2em;
+            color: white;
+            @include transition-ease;
+
+            &:hover {
+                background-color: #94dc3c;
+                color: black;
+            }
+        }
+    }
+
+    .owl-dots {
+        display: none;
+    }
+}

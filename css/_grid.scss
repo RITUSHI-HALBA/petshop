@@ -1,0 +1,301 @@
+.types_of_dog {
+    display: flex;
+    justify-content: space-between;
+    padding: 5em 1em;
+
+    h2 {
+        margin-top: 1em;
+        border-left: 5px solid $primary-color;
+        padding-left: 0.4em;
+    }
+
+    .blog {
+        width: 65%;
+    }
+
+    .categories_inner {
+        width: 30%;
+    }
+}
+
+.about-dog {
+   @include flex-box;
+    background-color: #80808024;
+    margin-bottom: 2em;
+    @include transition-ease;
+
+    .img {
+        width: 45%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .text-wrap {
+        width: 50%;
+        padding: 2em;
+
+        .date {
+            display: flex;
+            color: gray;
+
+            i {
+                margin-right: 0.4em;
+            }
+
+            p {
+                margin-right: 1em;
+            }
+        }
+
+
+        h5 {
+            font-weight: 400;
+        }
+
+        .para {
+            color: gray;
+            font-size: 1.2em;
+            line-height: 1.3em;
+        }
+
+        a {
+            text-decoration: none;
+            color: $primary-color;
+
+            i {
+                padding-left: 0.5em;
+            }
+        }
+    }
+
+    &:hover {
+        box-shadow: -3px 2px 8px;
+    }
+}
+
+.page-number {
+    list-style: none;
+    display: flex;
+    padding: 0;
+
+    li {
+        height: 2.4em;
+        @include flex-box;
+        justify-content: center;
+        font-size: 1.5em;
+        font-weight: 300;
+
+        a {
+            color: $primary-color;
+            text-decoration: none;
+        }
+    }
+
+    .list1 {
+        border: 2px solid #dee2e6;
+        width: 3em;
+
+        &:hover {
+            color: #629226;
+            background-color: #e9ecef;
+        }
+    }
+
+    .list2 {
+        border-top: 2px solid #dee2e6;
+        border-bottom: 2px solid #dee2e6;
+        width: 2.4em;
+        background-color: $primary-color;
+
+        &:hover {
+            color: black;
+
+        }
+
+        a {
+            color: white;
+        }
+    }
+
+    .list3 {
+        border: 2px solid #dee2e6;
+        width: 2.4em;
+
+        &:hover {
+            color: #629226;
+            background-color: #e9ecef;
+        }
+    }
+
+    .list4 {
+        border-top: 2px solid #dee2e6;
+        border-bottom: 2px solid #dee2e6;
+        width: 2.4em;
+
+        &:hover {
+            color: #629226;
+            background-color: #e9ecef;
+        }
+    }
+
+    .list5 {
+        border: 2px solid #dee2e6;
+        width: 3em;
+
+        &:hover {
+            color: #629226;
+            background-color: #e9ecef;
+        }
+    }
+}
+
+.button-wrap {
+    @include flex-box;
+
+    input {
+        width: 100%;
+        height: 3.5em;
+        border: 1px solid #80808045;
+        padding: 1em;
+    }
+
+    button {
+        width: 4.5em;
+        height: 3.5em;
+        border: 0;
+        color: white;
+        background-color: $primary-color;
+        @include flex-box;
+        justify-content: center;
+    }
+}
+
+.anchor-wrap {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        margin-bottom: 0.6em;
+    }
+
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        background-color: #f3f3f3;
+        font-size: 1.3em;
+        margin-bottom: 0.5em;
+        padding: 0.2em;
+        font-weight: 400;
+
+        &:hover {
+            color: $primary-color;
+        }
+
+        i {
+            padding-right: 0.4em;
+        }
+    }
+}
+
+.post-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+
+    h2 {
+        margin-bottom: 1em;
+    }
+
+    .post {
+       @include flex-box;
+        margin-bottom: 1em;
+
+        &:hover {
+            box-shadow: -3px 2px 8px;
+        }
+
+        img {
+            width: 23%;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            font-weight: 500;
+            padding-left: 1em;
+            font-size: 1.2em;
+            @include transition-ease;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+.dog-img {
+    margin-top: 1em;
+    width: 100%;
+}
+
+.link-wrap {
+    h2 {
+        margin-bottom: 1em;
+    }
+
+    a {
+        display: inline-block;
+        background-color: $primary-color;
+        text-decoration: none;
+        color: white;
+        padding: 0.3em 0.8em;
+        font-weight: 400;
+        margin-bottom: 0.4em;
+        margin-right: 0.2em;
+        @include transition-ease;
+
+        &:hover {
+            color: black;
+            background-color: #619226db;
+        }
+    }
+}
+
+.plain-wrap {
+    h2 {
+        margin-bottom: 1em;
+    }
+
+    .text {
+        background-color: #80808024;
+        @include flex-box;
+        flex-direction: column;
+        padding: 1.6em;
+        color: gray;
+
+        &:hover {
+            box-shadow: -3px 2px 8px;
+        }
+
+        a {
+            width: 10em;
+            height: 2.8em;
+            @include flex-box;
+            justify-content: center;
+            background-color: $primary-color;
+            text-decoration: none;
+            color: white;
+            @include transition-ease;
+
+            &:hover {
+                color: black;
+                background-color: #619226db;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,55 @@
+.service {
+    .service_inner {
+        padding: 1em 2em;
+
+        .box-wrap {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.service {
+    .box {
+        width: 48%;
+       @include flex-box;
+        background-color: $gray-color;
+        padding: 1em 2em;
+        margin-bottom: 3em;
+        box-shadow: -2px 2px 8px;
+
+        &:hover {
+            background-color: #7ab73069;
+            color: black;
+        }
+
+        i {
+            font-size: 4em;
+            color: $primary-color;
+        }
+
+    }
+
+    .text-wrap {
+        margin: 1em 0 0 1em;
+
+        p {
+            font-size: 1.3em;
+            color: gray;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 1.2em;
+            color: $primary-color;
+
+            i {
+                font-size: 1em;
+                margin: 0 0 0 0.5em;
+            }
+        }
+    }
+}
+
+
+

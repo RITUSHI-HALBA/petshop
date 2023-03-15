@@ -1,0 +1,80 @@
+.contact_us {
+    margin: 3em 2em;
+
+    .form-map {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .petform {
+        width: 55%;
+
+        input {
+            height: 55px;
+            background-color: #f3f3f3;
+            border: 0;
+        }
+
+        textarea {
+            margin: 0 0 1.1em 0;
+            height: 200px;
+            background-color: #f3f3f3;
+            border: 0;
+        }
+
+        span {
+            display: inline-block;
+            margin: 0 0 1.1em 0;
+            color: red;
+        }
+
+        button {
+            width: 100%;
+            margin: 0 0 1em 0;
+            background-color: $primary-color;
+            height: 55px;
+            border: none;
+
+            &:hover {
+                background-color: rgb(128 183 62);
+            }
+        }
+    }
+}
+
+.contact_us {
+    .map-address {
+        width: 42%;
+        padding: 2.5em 2em;
+        background-color: #f3f3f3;
+
+        .icon-info-wrap {
+            margin: 0 0 2em 0;
+        }
+    }
+}
+
+.contact_us {
+    .icon-info {
+        @include flex-box;
+        margin: 0 0 1em 0;
+
+        i {
+            font-size: 2.5em;
+            color: $primary-color;
+        }
+
+        .info {
+            margin: 0 0 0 1em;
+
+            h5 {
+                font-weight: 600;
+            }
+
+            h6 {
+                font-weight: 300;
+                color: gray;
+            }
+        }
+    }
+}
