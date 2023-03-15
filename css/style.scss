@@ -96,6 +96,15 @@ html {
         content: none;
     }
 
+    .nav-padding{
+        #myNavbar{
+            .dropdown{
+                a:active{
+                    background: none;
+                }
+            }
+        }
+    }
 }
 
 #heading {
