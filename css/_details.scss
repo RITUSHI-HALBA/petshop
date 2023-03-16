@@ -93,11 +93,19 @@
         border: none;
         height: 2.8em;
         font-size: 1.2em;
+        &:focus{
+            box-shadow: none;
+        }
     }
+
 
     textarea {
         border: none;
         font-size: 1.2em;
+        
+        &:focus{
+            box-shadow: none;
+        }
     }
 
     .name {

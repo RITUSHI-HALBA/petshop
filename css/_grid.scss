@@ -159,7 +159,11 @@
         height: 3.5em;
         border: 1px solid #80808045;
         padding: 1em;
+        &:focus{
+            outline: none;
+        }
     }
+
 
     button {
         width: 4.5em;
