@@ -1,3 +1,11 @@
+// loader
+var loader = document.getElementById("pre-loader");
+
+window.addEventListener ("load", function(){
+    loader.style.display = "none";
+})
+
+
 // SCROLL BUTTON
   // Get the button
   let mybutton = document.getElementById("myBtn");
